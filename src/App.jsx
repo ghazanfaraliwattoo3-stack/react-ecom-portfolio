@@ -54,7 +54,7 @@ const App = () => {
     <CartContext.Provider
       value={{ cart, addToCart, removeFromCart, decreaseQty, increaseQty }}
     >
-      <BrowserRouter>
+      <BrowserRouter  basename="/react-ecom-portfolio">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/electronics" element={<Electronics />} />
